@@ -1,6 +1,6 @@
 # Magento Module NinjaCoder30_CustomerImport
 
-`composer require  ninjacoder30/module-customerimport:1.0.1`
+`composer require  ninjacoder30/module-customerimport:1.0.2`
 
 ## Feature
 

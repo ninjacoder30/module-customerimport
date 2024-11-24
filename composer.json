@@ -2,7 +2,7 @@
     "name": "ninjacoder30/module-customerimport",
     "description": "A Magento 2 module for importing customers from CSV and JSON",
     "type": "magento2-module",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "dev",
         "magento",
