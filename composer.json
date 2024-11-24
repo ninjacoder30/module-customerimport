@@ -1,18 +1,21 @@
 {
     "name": "ninjacoder30/customer-import",
     "description": "A Magento 2 module for importing customers from CSV and JSON",
-    "require": {
-        "php": "~8.1.0||~8.2.0",
-        "magento/framework": "103.0.*"
-    },
-    "authors": [
-        {
-            "name": "Sairaj Gadekar",
-            "email": "sai.gadekar7@gmail.com"
-        }
+    "keywords": [
+        "dev",
+        "magento",
+        "magento2",
+        "customer-import"
     ],
+    "require": {
+        "php": "^7||^8",
+        "magento/framework": "^103"
+    },
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "2.0.2",
+    "license": [
+        "MIT"
+    ],
     "autoload": {
         "files": [
             "registration.php"
