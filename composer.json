@@ -1,0 +1,21 @@
+{
+    "name": "ninjacoder30/module-customerimport",
+    "description": "Magento 2 module for importing customers data",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Sairaj Gadekar",
+            "email": "sai.gadekar7@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "NinjaCoder30\\CustomerImport\\": ""
+        }
+    }
+}

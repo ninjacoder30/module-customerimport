@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="custom_customer_import_command" xsi:type="object">
+                    NinjaCoder30\CustomerImport\Console\Command\ImportCustomersCommand
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="NinjaCoder30\CustomerImport\Model\CustomerImport">
+        <arguments>
+            <argument name="profiles" xsi:type="array">
+                <item name="csv" xsi:type="object">
+                    NinjaCoder30\CustomerImport\Model\ImportCustomerProfile\CsvCustomerProfile
+                </item>
+                <item name="json" xsi:type="object">
+                    NinjaCoder30\CustomerImport\Model\ImportCustomerProfile\JsonCustomerProfile
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="NinjaCoder30\CustomerImport\Logger\CustomerImportLogger">
+        <arguments>
+            <argument name="name" xsi:type="string">customer_import</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="file" xsi:type="object">NinjaCoder30\CustomerImport\Logger\Handler\CustomerImportHandler</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
